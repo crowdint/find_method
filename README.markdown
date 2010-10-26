@@ -1,7 +1,7 @@
 # find_method
 
-Sometimes, you just remember part of a method name and you just don't want to go
-through the whole list.
+Sometimes, you just remember part of a method name and you don't want to go
+through the whole method list, you don't want to Google either.
 
 ## Usage
 
