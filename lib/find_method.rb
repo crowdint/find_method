@@ -1,19 +1,10 @@
 module FindMethod
-  module ClassMethods
-    def find_method(query)
-      methods.select {|m| Regexp.new(query).match(m)}
-    end
-  end
-
-  module InstanceMethods
-    def find_method(query)
-      methods.select {|m| Regexp.new(query).match(m)}
-    end
+  def find_method(query)
+    methods.grep(Regexp.new(query))
   end
 
   def self.included(receiver)
-    receiver.extend         ClassMethods
-    receiver.send :include, InstanceMethods
+    receiver.extend         FindMethod
   end
 end
 
