@@ -10,7 +10,7 @@ through the whole list.
     AnyClass.find_method("module") # => ["module_eval", "module_exec", "included_modules"]
 
     any_object = AnyClass.new
-    any_object.find_method("module") # => ["to_enum", "enum_for"]
+    any_object.find_method("enum") # => ["to_enum", "enum_for"]
 
 ### Rails
 
